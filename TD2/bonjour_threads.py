@@ -20,8 +20,8 @@ def worker(input, output):
 
 def execute_function(func, args):
     result = func(args)
-    return '%s says that %s %s = %s' % \
-        (current_process().name, func.__name__, args, result)
+    return ' %s = %s' % \
+        ( args, result)
 
 #
 # Functions referenced by tasks
@@ -71,48 +71,48 @@ def main(argv=None):
         for ligne in f:
            if ligne[0:2] == "M.":
                TASKS2.append((dites_bonjour, (ligne.strip(' \r\n'))))
-           if ligne[0:5] == "Mlle.":
-               TASKS3.append((dites_bonjour, (ligne.strip(' \r\n'))))
            if ligne[0:4] == "Mme.":
                TASKS1.append((dites_bonjour, (ligne.strip(' \r\n'))))
+           if ligne[0:5] == "Mlle.":
+               TASKS3.append((dites_bonjour, (ligne.strip(' \r\n'))))
            #logging.info("Ligne: %s" % (ligne.strip(' \r\n')))
 
     
-    # Submit tasks  task3 - MADMOISSELLES
-    for task in TASKS3:
-        logging.info(task)
-        task_queue.put(task)
-
-    # Start worker processes
-    #for i in range(NUMBER_OF_PROCESSES):
-     #   Process(target=worker, args=(task_queue, done_queue)).start()
-
-    # Get and print results
-    for i in range(len(TASKS3)):
-        logging.info(done_queue.get())
-
-
-    for task in TASKS1:
-        logging.info(task)
-        task_queue.put(task)
+    # Submit tasks  task3 - mettre en task_queue les threads pour MADMOISSELLES
+    for task3 in TASKS3:
+        logging.info(task3)
+        task_queue.put(task3)
 
     # Start worker processes
     for i in range(NUMBER_OF_PROCESSES):
         Process(target=worker, args=(task_queue, done_queue)).start()
 
     # Get and print results
+    for i in range(len(TASKS3)):
+        print done_queue.get()     #afficher  done_queue
+
+
+    for task1 in TASKS1: # mettre en task_queue les threads pour MADAMES
+        logging.info(task1)
+        task_queue.put(task1)
+
+    # Start worker processes
+    #for i in range(NUMBER_OF_PROCESSES):
+        #Process(target=worker, args=(task_queue, done_queue)).start()
+
+    # Get and print results
     for i in range(len(TASKS1)):
-        logging.info(done_queue.get())
+        print done_queue.get()   #afficher  done_queue
         
         
-    # Add more tasks using `put()`TASK2 - MONSIEURS
-    for task in TASKS2:
-        logging.info(task)
-        task_queue.put(task)
+    # Add more tasks using `put()`  
+    for task2 in TASKS2:    # mettre en task_queue les threads pour MONSIEURS
+        logging.info(task2)
+        task_queue.put(task2)
 
     # Get and print some more results
     for i in range(len(TASKS2)):
-        logging.info(done_queue.get())
+        print done_queue.get()  #afficher  done_queue
 
     # Tell child processes to stop
     for i in range(NUMBER_OF_PROCESSES):
