@@ -14,7 +14,7 @@ def utilisation():
     #Affichage mode d'utilisation
     print """
           Le programme doit etre appelle avec minimum 1 argument:
-          python bonjour_listes.py Dragos
+          python bonjour_listes.py Maria
           """
 
 def main(argv=None):
