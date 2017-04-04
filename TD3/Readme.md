@@ -1,4 +1,4 @@
-#### L'application de chat que j'ai implemente sera plus comme une salle de discussion. Cela signifie donc que, plusieurs utilisateurs peuvent se connecter au serveur de discussion et envoyer leurs messages. Chaque message est diffusé à chaque utilisateur de chat connecté.
+####  * L'application de chat que j'ai implemente sera plus comme une salle de discussion. Cela signifie donc que, plusieurs utilisateurs peuvent se connecter au serveur de discussion et envoyer leurs messages. Chaque message est diffusé à chaque utilisateur de chat connecté.
 
 
 ##### Exécutez le serveur dans un terminal:
