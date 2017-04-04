@@ -20,13 +20,13 @@ if __name__ == "__main__":
     RECV_BUFFER = 1024
     PORT = 6666
     
-    #create a sochet 
+    #creare sochet 
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     server_socket.bind(("0.0.0.0", PORT))     #adresa ip si port-ul
     server_socket.listen(10)                  #queue up to 10 requests
  
-    # adaaug socket_server in lista de conexiuni pot fi citite
+    # adaugare socket_server in lista de conexiuni 
     CONNECTION_LIST.append(server_socket)
  
     print "Chat server started on port " + str(PORT)         
