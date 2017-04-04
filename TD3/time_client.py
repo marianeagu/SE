@@ -14,7 +14,7 @@ if __name__ == "__main__":
     host = sys.argv[1]
     port = int(sys.argv[2])
     
-    #creare  socket object 
+    #creare socket object 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.settimeout(2)
      
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     while True:
         socket_list = [sys.stdin, s]
          
-        # lista socket-urilor care sunt gata pentru a fi citite 
+        # lista socket-uri 
         read_sockets, write_sockets, error_sockets = select.select(socket_list , [], [])
          
         for sock in read_sockets:
