@@ -13,7 +13,6 @@
 * <You> message
 * <You> text message
 * <('127.0.0.1', 55719)> hello
-* <You>
 
 ##### Un autre console:
 * <You> [127.0.0.1:57339] entered room
