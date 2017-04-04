@@ -10,12 +10,12 @@
 ##### Exécutez le client à partir de plusieurs consoles:
 * $ python time_client.py localhost 6666
 * Connected to remote host. Start sending messages
-* <You> message
-* <You> text message
+* [You] message
+* [You] text message
 * <('127.0.0.1', 55719)> hello
 
 ##### Un autre console:
-* <You> [127.0.0.1:57339] entered room
+* [You] [127.0.0.1:57339] entered room
 * <('127.0.0.1', 57339)> message
 * <('127.0.0.1', 57339)> text message
-* <You> hello
+* [You] hello
