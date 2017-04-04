@@ -14,7 +14,7 @@
 * <[You]>  text message
 * <('127.0.0.1', 55719)> hello
 
-##### Un autre console:
+##### Une autre console:
 * <[You]> [127.0.0.1:57339] entered room
 * <('127.0.0.1', 57339)> message
 * <('127.0.0.1', 57339)> text message
