@@ -4,8 +4,8 @@ Le chiffrement par décalage, aussi connu comme le chiffre de César ou le code 
 
 ## Saisir un message et codez-le en César ou saisir un message codé pour etre décode.
 
-Chosisir "Codez!" pour afficher toutes les possibilités de crypatage du texte dans la zone de texte.
-Chosisir "Decodez!" pour afficher toutes les possibilités de decryptage du texte dans la zone de texte.
+* Chosisir "Codez!" pour afficher toutes les possibilités de crypatage du texte dans la zone de texte.
+* Chosisir "Decodez!" pour afficher toutes les possibilités de decryptage du texte dans la zone de texte.
 
 
 ## Run this file dans le terminal:
