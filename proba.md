@@ -28,7 +28,7 @@ output: pdf_document
 
 * Quelle est la probabilité pour que Eva gagne ? 
 
-###### Réponse : P$(N_E = k ∩ N_R > k)$ = $(1/2)^$
+###### Réponse : P$(N_E = k ∩ N_R > k)$ = $(1/2)$
 
 
 ##### Question 4
@@ -36,7 +36,7 @@ output: pdf_document
 * Quelle est la probabilité de match nul ?
 
 
-###### Réponse : P$(N_E = k ∩ N_R = k)$ = $(1/12)^$
+###### Réponse : P$(N_E = k ∩ N_R = k)$ = $(1/12)$
 
 ##### Question 5
 
@@ -56,14 +56,14 @@ output: pdf_document
 
 *  Calculer la probabilité que la variable aléatoire $W$ soit inférieure ou égale à $1/3$.  
 
-###### Réponse : P$(W <= 1/3)$ = $(1/6)^$
+###### Réponse : P$(W <= 1/3)$ = $(1/6)$
 
   
 ##### Question 2
 
 *  Calculer l'espérance de la variable aléatoire $W^2$.  
 
-###### Réponse : E$(W^2)$ = $(W)^2$
+###### Réponse : E$(W^2)$ = $(W^2)$
 
 ** **
 
